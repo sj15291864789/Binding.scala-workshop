@@ -1,0 +1,18 @@
+udo: false
+
+language: scala
+
+scala:
+  - 2.11.7
+
+jdk:
+  - oraclejdk8
+
+before_deploy:
+  - travis_retry git clone --depth=1 $secret_git ./secret
+
+deploy:
+  provider: script
+  script: ./deploy.sh
+  on:
+    condition: -e ./deploy.sh
