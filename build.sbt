@@ -2,7 +2,7 @@ site.settings
 
 ghpages.settings
 
-git.remoteRepo := "git@github.com:ThoughtWorksInc/Binding.scala-workshop.git"
+git.remoteRepo := "git@github.com:sj15291864789/Binding.scala-workshop.git"
 
 val js = project
 
