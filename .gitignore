@@ -123,3 +123,5 @@ crashlytics.properties
 crashlytics-build.properties
 .cache-main
 .cache-tests
+
+secret/
