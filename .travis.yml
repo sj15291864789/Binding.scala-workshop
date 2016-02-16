@@ -1,4 +1,4 @@
-udo: false
+sudo: false
 
 language: scala
 
@@ -15,4 +15,3 @@ deploy:
   provider: script
   script: ./deploy.sh
   on:
-    condition: -e ./deploy.sh
