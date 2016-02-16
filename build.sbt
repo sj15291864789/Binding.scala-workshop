@@ -13,7 +13,7 @@ import org.scalajs.core.tools.io.FileVirtualJSFile
 SiteKeys.siteMappings ++= {
   val linked = (scalaJSLinkedFile in js in Compile).value.asInstanceOf[FileVirtualJSFile]
   Seq(
-    linked.file -> linked.file.getName,
-    linked.sourceMapFile -> linked.sourceMapFile.getName
+    linked.file -> "Binding.scala-workshop.js",
+    linked.sourceMapFile -> "Binding.scala-workshop.js.map"
   )
 }
