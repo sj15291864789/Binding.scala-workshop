@@ -1,5 +1,10 @@
 sudo: false
 
+cache:
+  directories:
+    - $HOME/.ivy2/cache
+    - $HOME/.sbt/boot/
+
 language: scala
 
 scala:
